@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>TIMON‘BLOG</title>
+  <title>丁满博客 - Hexo博客</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://developing-man.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://developing-man.github.io/"/>
   <updated>2021-02-15T17:44:14.114Z</updated>
-  <id>http://example.com/</id>
+  <id>https://developing-man.github.io/</id>
   
   <author>
     <name>胖胖的丁满</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>第一篇博客</title>
-    <link href="http://example.com/posts/59448.html"/>
-    <id>http://example.com/posts/59448.html</id>
+    <link href="https://developing-man.github.io/posts/59448.html"/>
+    <id>https://developing-man.github.io/posts/59448.html</id>
     <published>2021-02-15T16:13:02.000Z</published>
     <updated>2021-02-15T17:44:14.114Z</updated>
     
@@ -33,19 +33,19 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://developing-man.github.io/categories/Java/"/>
     
-    <category term="Test" scheme="http://example.com/categories/Java/Test/"/>
+    <category term="Test" scheme="https://developing-man.github.io/categories/Java/Test/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://developing-man.github.io/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/16107.html"/>
-    <id>http://example.com/posts/16107.html</id>
+    <link href="https://developing-man.github.io/posts/16107.html"/>
+    <id>https://developing-man.github.io/posts/16107.html</id>
     <published>2021-02-14T15:24:05.674Z</published>
     <updated>2021-02-15T17:44:41.684Z</updated>
     
@@ -59,9 +59,9 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://developing-man.github.io/categories/Java/"/>
     
-    <category term="Test" scheme="http://example.com/categories/Java/Test/"/>
+    <category term="Test" scheme="https://developing-man.github.io/categories/Java/Test/"/>
     
     
   </entry>

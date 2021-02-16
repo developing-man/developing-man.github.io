@@ -20,14 +20,14 @@
 
   <!-- 页面元数据 -->
   
-  <title>TIMON‘BLOG</title>
+  <title>丁满博客 - Hexo博客</title>
   
 
   
 
   <!-- feed -->
   
-    <link rel="alternate" href="/atom.xml" title="TIMON‘BLOG" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="丁满博客 - Hexo博客" type="application/atom+xml">
   
 
   <!-- import meta -->
@@ -346,7 +346,7 @@
       <div class='cover-wrapper  featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
-          <div class='cover-bg lazyload placeholder' data-bg="https://picup.heson10.com/img/upyun/home_top_bg.webp"></div>
+          <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/home_top_bg.jpg"></div>
         
         <div class='cover-body'>
   <div class='top'>
@@ -697,7 +697,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Tue Feb 16 2021 14:11:04 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Tue Feb 16 2021 16:47:14 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2021-02-16 日</div>
           
         </div>
@@ -1750,7 +1750,7 @@ valine.Q('*').limit(7).find().then(function (comments) {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'http://example.com' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://developing-man.github.io' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1768,7 +1768,7 @@ valine.Q('*').limit(7).find().then(function (comments) {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'http://example.com' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://developing-man.github.io' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1790,7 +1790,7 @@ valine.Q('*').limit(7).find().then(function (comments) {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'http://example.com' + pv.getAttribute('data-path');
+          var url = 'https://developing-man.github.io' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
