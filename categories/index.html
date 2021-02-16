@@ -16,7 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Categories - TIMON‘BLOG</title>
+  <title>所有分类 - TIMON‘BLOG</title>
   
 
   
@@ -167,6 +167,22 @@
             
             
               <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fal fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
                 <a class="menuitem flat-box faa-parent animated-hover" href=/guestbook/
                   
                   
@@ -265,6 +281,22 @@
               
             
               <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fal fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
                 <a class="menuitem flat-box faa-parent animated-hover" href=/guestbook/
                   
                   
@@ -307,7 +339,7 @@
 
   
   
-      <div class='cover-wrapper page featured' style="display: none;">
+      <div class='cover-wrapper category featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-bg lazyload placeholder' data-bg="https://picup.heson10.com/img/upyun/home_top_bg.webp"></div>
@@ -330,6 +362,20 @@
               
               id="home">
               <i class='fad fa-home fa-fw'></i><p>首页</p>
+            </a>
+          
+            <a href="/categories/"
+              
+              
+              id="categories">
+              <i class='fal fa-folder-open fa-fw'></i><p>分类</p>
+            </a>
+          
+            <a href="/tags/"
+              
+              
+              id="tags">
+              <i class='fal fa-tags fa-fw'></i><p>标签</p>
             </a>
           
             <a href="/archives/"
@@ -404,6 +450,7 @@
         
         
 
+
 <aside class='l_side'>
   <div style="margin-bottom: 16px;border-radius: 8px;" class='shadow floatable widget_author desktop'>
     <div id="zuozhebg" class="newauthor"
@@ -473,7 +520,7 @@
             </div>
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -486,6 +533,39 @@
           </nav>
         </div>
       </div>
+       
+      <!-- 主题配置文件开启此功能 按需修改文章标题和链接  -->
+      <dl class="article-newest">
+        <dt>———<span class="tit" style="font-weight: bold;">热门文章</span>———</dt>
+        <li>
+          <span class="order od-1">1</span>
+          <a href="/posts/7207.html" title="Hexo博客调用Valine最新评论"><i
+              class="iconfont icon-sanjiao"></i>Hexo博客调用Valine最新评论</a>
+        </li>
+        <li>
+          <span class="order od-2">2</span>
+          <a href="/posts/53612.html" title="记录一次24H在线要饭系统的搭建"><i class="iconfont icon-sanjiao"></i>记录一次24H在线要饭系统的搭建</a>
+        </li>
+        <li>
+          <span class="order od-3">3</span>
+          <a href="/posts/5892.html" title="给博客增加彩色标签云"><i class="iconfont icon-sanjiao"></i>给博客增加彩色标签云</a>
+        </li>
+        <li>
+          <span class="order od-4">4</span>
+          <a href="/posts/28396.html" title="所有关于Valine评论系统的配置都在这里【合集】"><i
+              class="iconfont icon-sanjiao"></i>所有关于Valine评论系统的配置都在这里【合集】</a>
+        </li>
+        <li>
+          <span class="order od-5">5</span>
+          <a href="/posts/54971.html" title="Hexo在GitHub和Coding双线部署教程"><i
+              class="iconfont icon-sanjiao"></i>Hexo在GitHub和Coding双线部署教程</a>
+        </li>
+        <li>
+          <span class="order od-6">6</span>
+          <a href="/posts/121.html" title="用hexo+github pages+独立域名搭建个人博客"><i
+              class="iconfont icon-sanjiao"></i>用hexo+github pages+独立域名搭建个人博客</a>
+        </li>
+      </dl>
       
 
     </div>
@@ -514,7 +594,12 @@
           <li><a class="flat-box"
             title="/categories/Java/" href="/categories/Java/"
             id="categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>Java</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/Java/Test/" href="/categories/Java/Test/"
+            id="categoriesJavaTest"
+            ><div class='name'>Test</div><div class='badge'>(2)</div></a></li>
         
       </ul>
     </div>
@@ -609,7 +694,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Tue Feb 16 2021 01:36:47 GMT+0800 (中国标准时间)</div>
+            <div id="last-update" style="display: none;">Tue Feb 16 2021 14:11:04 GMT+0800 (中国标准时间)</div>
             <div id="last-update-show">2021-02-16 日</div>
           
         </div>
@@ -684,174 +769,37 @@
 </aside>
 
 <div class='l_main'>
-  <article
-  class="article post white-box reveal md shadow floatable article-type-page"
-  id="page" itemscope itemprop="blogPost">
   
-
-
-  
-  <div class="article-meta" id="top">
     
-    
-    
-      <h1 class="title">
-        Categories
-      </h1>
-      <div class='new-meta-box'>
-        
-          
+      <div class='post-wrapper'>
+        <article id="cat" class="post article white-box reveal shadow floatable">
+          <h2>所有分类</h2>
+          <div class="all-cats">
             
-<div class='new-meta-item author'>
-  <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/heson525/pic@master/pic/avatar03.png">
-    <p>Timon</p>
-  </a>
-</div>
-
-          
-        
-          
+              
+                <a class="" href="/categories/Java/">
+                  <span><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;Java</span>
+                  <span class="title">
+                    (2)
+                  </span>
+                </a>
+              
+                <a class=" child" href="/categories/Java/Test/">
+                  <span><i class='fas fa-folder-open fa-fw' aria-hidden="true"></i>&nbsp;&nbsp;Test</span>
+                  <span class="title">
+                    (2)
+                  </span>
+                </a>
+              
             
-
+          </div>
+          <br>
           
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2021年2月16日</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="Categories" data-path="/categories/">
-        <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
+        </article>
       </div>
     
-  </div>
-
-
   
-
-  
-  
-  
-  
-  
-  
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-16T01:10:21+08:00">
-  <a class='notlink'>
-    <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年2月16日</p>
-  </a>
 </div>
-
-        
-      
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/categories/index.html&title=Categories - TIMON‘BLOG&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/categories/index.html&title=Categories - TIMON‘BLOG&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/categories/index.html&title=Categories - TIMON‘BLOG&summary="
-          
-          >
-          
-            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-  </div>
-
-
-  
-  
-
-  
-</article>
-
-
-
-
-  <article class="post white-box reveal shadow floatable" id="comments">
-    <p ct><i class='fal fa-comments'></i> 评论</p>
-    
-    <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
-
-  </article>
-
-
-
-
-
-</div>
-
 
 
       </div>
@@ -859,6 +807,71 @@
   
   <footer class="footer clearfix">
     
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+          
+            
+              <a href="https://github.com/volantis-x/"
+                class="social  flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+                
+                  <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org@1.1/icon/1322024-social-media/029-github.svg" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"/>
+                
+              </a>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <a href="/11"
+                class="social  flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+                
+                  <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/qq.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/qq.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"/>
+                
+              </a>
+            
+          
+            
+          
+            
+              <a href="/11"
+                class="social  flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+                
+                  <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/weibo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/weibo.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg"/>
+                
+              </a>
+            
+          
+            
+              <a href="/11"
+                class="social  flat-btn"
+                target="_blank"
+                rel="external nofollow noopener noreferrer">
+                
+                  <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/wechat.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/64/wechat.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" style="border-radius:120px"/>
+                
+              </a>
+            
+          
+        </div>
+      
     
       
         <div class='copyright'>
@@ -953,6 +966,272 @@
 
 
 <!-- internal -->
+
+
+
+  
+  
+
+  <div id="rightmenu-wrapper">
+    <ul class="list-v rightmenu" id="rightmenu-content">
+      <li class='option'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-text' onclick='document.execCommand("copy")'><i class='fa fa-copy fa-fw'></i>复制文本</a>
+        <hr id='hr-text'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-href'><i class='fa fa-link fa-fw'></i>复制链接</a>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-open-href'><i class='fa fa-external-link-square-alt fa-fw'></i>在新标签页打开</a>
+        <hr id='hr-href'>
+        <a class='vlts-menu opt fix-cursor-default' id='menu-copy-src'><i class='fa fa-image fa-fw'></i>复制图片地址</a>
+        <hr id='hr-src'>
+      </li>
+      
+        <li class='navigation'>
+          <a class='nav icon-only fix-cursor-default' onclick='history.back()'><i class='fa fa-arrow-left fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='history.forward()'><i class='fa fa-arrow-right fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' onclick='window.location.reload()'><i class='fa fa-redo fa-fw'></i></a>
+          <a class='nav icon-only fix-cursor-default' href='/'><i class='fa fa-home fa-fw'></i></a>
+        </li>
+      
+      <hr>
+      
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/faqs/
+        
+        
+        
+        
+          id="https:volantisjsorgfaqs"
+        >
+        <i class='fa fa-question fa-fw'></i> 常见问题
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+        
+        
+        
+        
+          id="https:volantisjsorgexamples"
+        >
+        <i class='fa fa-rss fa-fw'></i> 示例博客
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/contributors/
+        
+        
+        
+        
+          id="https:volantisjsorgcontributors"
+        >
+        <i class='fa fa-fan fa-spin fa-fw'></i> 加入社区
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/volantis-docs/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xvolantis-docs"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 本站源码
+      </a>
+    </li>
+  
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' href=https://github.com/volantis-x/hexo-theme-volantis/
+        
+        
+        
+        
+          id="https:githubcomvolantis-xhexo-theme-volantis"
+        >
+        <i class='fa fa-code-branch fa-fw'></i> 主题源码
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+          
+    <li>
+      <a class='vlts-menu fix-cursor-default' 
+        
+        
+        
+          onclick="document.execCommand('print')"
+        
+        >
+        <i class='fa fa-print fa-fw'></i> 打印页面
+      </a>
+    </li>
+  
+        
+      
+        
+          <hr>
+        
+      
+        
+      
+    </ul>
+  </div>
+
+  <script>
+    window.document.oncontextmenu = function (event) {
+      if (event.ctrlKey) return true;
+      if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true;
+      return popMenu(event);
+    };
+    document.addEventListener("click", function (event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      mymenu.style.display = "none";
+    });
+    function popMenu(event) {
+      var mymenu = document.getElementById('rightmenu-wrapper');
+      var menuContent = document.getElementById('rightmenu-content');
+      var screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      var screenHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      mymenu.style.left = event.clientX + "px"; // 获取鼠标位置
+      mymenu.style.top = event.clientY + "px";
+      mymenu.style.display = 'block';
+      if (event.clientX * 2 > screenWidth) {
+        menuContent.classList.add('left');
+      } else {
+        menuContent.classList.remove('left');
+      }
+      if (event.clientY * 2 > screenHeight) {
+        menuContent.classList.add('top');
+      } else {
+        menuContent.classList.remove('top');
+      }
+
+      let hrText = document.getElementById('hr-text');
+      let hrSrc = document.getElementById('hr-src');
+      let hrHref = document.getElementById('hr-href');
+
+      // 选中图片
+      let copySrc = document.getElementById('menu-copy-src');
+      if (copySrc != undefined) {
+        if (event.target.currentSrc) {
+          copySrc.style.display = 'block';
+          copySrc.addEventListener("click", function (e) {
+            copyString(event.target.currentSrc);
+          },{once: true});
+          hrSrc.style.display = 'block';
+        } else {
+          copySrc.style.display = 'none';
+          hrSrc.style.display = 'none';
+        }
+      }
+
+      // 选中按钮
+      // 判断是不是按钮
+      let href = '';
+      if (event.path) {
+        for (i = 0; i < event.path.length; i++) {
+          if (event.path[i].href != undefined && event.path[i].href.length > 0) {
+            href = event.path[i].href;
+          }
+        }
+      }
+
+      let copyText = document.getElementById('menu-copy-text');
+      copyText.style.display = 'none';
+      hrText.style.display = 'none';
+      if (href.length == 0) {
+        // 选中文本
+        if (window.getSelection().toString()) {
+          copyText.style.display = 'block';
+          hrText.style.display = 'block';
+        }
+      }
+
+      // 在新标签页打开
+      let openHref = document.getElementById('menu-open-href');
+      if (openHref != undefined) {
+        if (href.length > 0) {
+          openHref.style.display = 'block';
+          openHref.addEventListener("click", function (e) {
+            window.open(href);
+          },{once: true});
+          hrHref.style.display = 'block';
+        } else {
+          openHref.style.display = 'none';
+          hrHref.style.display = 'none';
+        }
+      }
+      // 复制链接
+      let copyHref = document.getElementById('menu-copy-href');
+      if (copyHref != undefined) {
+        if (href.length > 0) {
+          copyHref.style.display = 'block';
+          copyHref.addEventListener("click", function (e) {
+            copyString(href);
+          },{once: true});
+        } else {
+          copyHref.style.display = 'none';
+        }
+      }
+
+      // 有音乐播放器
+      if ('' == true && ('home,help,examples,contributors,hr,source_docs,source_theme,hr,print,hr,music'||[]).includes('music')) {
+        // 如果有aplayer，初始化一下
+      	try {
+      		checkAPlayer();
+          updateTitle();
+      	} catch (error) {
+      		console.log(error);
+      	}
+      }
+
+      return false; // 该行代码确保系统自带的右键菜单不会被调出
+    }
+    function hideMenu() {
+      document.getElementById('rightmenu-wrapper').style.display = 'none';
+    }
+    function copyString(str) {
+      const input = document.createElement('input');
+      input.setAttribute('readonly', 'readonly');
+      document.body.appendChild(input);
+      input.setAttribute('value', str);
+      input.select();
+      document.execCommand('copy');
+      document.body.removeChild(input);
+    }
+    document.execCommand('click');
+  </script>
 
 
 
