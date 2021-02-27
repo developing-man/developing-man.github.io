@@ -521,7 +521,7 @@
             </div>
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -597,6 +597,11 @@
             id="categoriesBlog"
             ><div class='name'>Blog</div><div class='badge'>(2)</div></a></li>
         
+          <li><a class="flat-box"
+            title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
+            id="categoriesE69D82E8AEB0"
+            ><div class='name'>杂记</div><div class='badge'>(1)</div></a></li>
+        
       </ul>
     </div>
   </section>
@@ -668,7 +673,7 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>1.1k 字</div>
+          <div>1.5k 字</div>
         </div>
       
 
@@ -690,8 +695,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed Feb 24 2021 21:16:02 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-02-24 日</div>
+            <div id="last-update" style="display: none;">Sat Feb 27 2021 14:53:54 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2021-02-27 日</div>
           
         </div>
         
@@ -741,7 +746,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-02-24 日';
+            document.getElementById('last-update-show').innerHTML = '2021-02-27 日';
           }
         </script>
         
@@ -758,20 +763,6 @@
 
 
 
-  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
-    
-  <header>
-    
-      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-    </div>
-  </section>
-
 
   
 
@@ -785,6 +776,12 @@
   
 
 
+  
+    
+      
+        <div class='headimg lazyload placeholder' data-bg='https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/helloworld.jpeg'></div>
+      
+    
   
   <div class="article-meta" id="top">
     
@@ -808,6 +805,13 @@
         
           
             
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fal fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
+    </a>
+  </div>
+
 
           
         
@@ -845,15 +849,12 @@
   
 
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <p>&emsp;&emsp;来上海两个多月了，新的工作也开始了一个多月。</p>
+<p>&emsp;&emsp;之前在搜一些技术问题的时候，发现很多大佬都有自己的博客。加上偶尔发现我的发小“<a target="_blank" rel="noopener" href="https://www.laoqiange.club/">老千哥</a>”自己也搭建了博客，用于记录平常的工作问题以及个人的想法，所以我一直也想建立一个属于自己的博客。但是前段时间在上家公司加班有点严重，加上为了找工作复习、投简历，所以没时间搞这件事儿。现在项目不算忙，所以就抽出时间搞了一个属于自己的博客，用来记录下自己的工作上和平时学习上的问题。</p>
+<p>&emsp;&emsp;本次博客才用的是<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>进行搭建的，主题用的是volantis魔改版<a target="_blank" rel="noopener" href="https://www.heson10.com/volantis/posts/3882.html">Volantis-heson</a>。按照作者的指导搭建好之后，将其部署在了GitHub Pages上。</p>
+<p>&emsp;&emsp;曾经问过一个大佬在学习上又没有什么习惯或者技巧，他说“<strong>我每当解决一个问题之后都会总结并记录下来</strong>”。是的自己也深有体会，<strong>每次百度半天解决的问题，不做记录的话过一段时间，再遇到一样会去百度半天</strong>，可能这就是平常人与大佬们的区别吧。希望自己也能坚持学习，并将解决问题的方法或新学习到的知识记录下来，将来也能成为一个“大佬”，哈哈！</p>
+<p>&emsp;&emsp;以某某大佬的一句话作为结尾，以此共勉：</p>
+<p>&emsp;&emsp;“<strong>对任何渴望进步的人来说，写博客/文章/回答对自己的成长帮助都是巨大的。频率和数量不必过分强求，有话要说就写写，没事就歇歇，随意点。因为坚持写作的那一刻起，你就已经开始受益。</strong>”</p>
 
   
   
@@ -862,12 +863,6 @@
     
     
     
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\posts\7720.html" title="如何快速搭建该博客" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/photo03.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/photo03.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" /><span class="title">如何快速搭建该博客</span></a></div></section></div>
     
     
     <div class='copyright'>
@@ -896,10 +891,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-21T22:40:30+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-27T14:49:37+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年2月21日</p>
+    <p>更新于：2021年2月27日</p>
   </a>
 </div>
 

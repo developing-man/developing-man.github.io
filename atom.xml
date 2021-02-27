@@ -71,17 +71,20 @@
     <link href="https://developing-man.github.io/posts/16107.html"/>
     <id>https://developing-man.github.io/posts/16107.html</id>
     <published>2021-02-14T15:24:05.674Z</published>
-    <updated>2021-02-21T14:40:30.387Z</updated>
+    <updated>2021-02-27T06:49:37.019Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>&emsp;&emsp;来上海两个多月了，新的工作也开始了一个多月。</p><p>&emsp;&emsp;之前在搜一些技术问题的时候，发现很多大佬都有自己的博客。加上偶尔发现我的发小“<a href="https://www.laoqiange.club/">老千哥</a>”自己也搭建了博客，用于记录平常的工作问题以及个人的想法，所以我一直也想建立一个属于自己的博客。但是前段时间在上家公司加班有点严重，加上为了找工作复习、投简历，所以没时间搞这件事儿。现在项目不算忙，所以就抽出时间搞了一个属于自己的博客，用来记录下自己的工作上和平时学习上的问题。</p><p>&emsp;&emsp;本次博客才用的是<a href="https://hexo.io/zh-cn/docs/">Hexo</a>进行搭建的，主题用的是volantis魔改版<a href="https://www.heson10.com/volantis/posts/3882.html">Volantis-heson</a>。按照作者的指导搭建好之后，将其部署在了GitHub Pages上。</p><p>&emsp;&emsp;曾经问过一个大佬在学习上又没有什么习惯或者技巧，他说“<strong>我每当解决一个问题之后都会总结并记录下来</strong>”。是的自己也深有体会，<strong>每次百度半天解决的问题，不做记录的话过一段时间，再遇到一样会去百度半天</strong>，可能这就是平常人与大佬们的区别吧。希望自己也能坚持学习，并将解决问题的方法或新学习到的知识记录下来，将来也能成为一个“大佬”，哈哈！</p><p>&emsp;&emsp;以某某大佬的一句话作为结尾，以此共勉：</p><p>&emsp;&emsp;“<strong>对任何渴望进步的人来说，写博客/文章/回答对自己的成长帮助都是巨大的。频率和数量不必过分强求，有话要说就写写，没事就歇歇，随意点。因为坚持写作的那一刻起，你就已经开始受益。</strong>”</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;&amp;emsp;&amp;emsp;来上海两个多月了，新的工作也开始了一个多月。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;之前在搜一些技术问题的时候，发现很多大佬都有自己的博客。加上偶尔发现我的发小“&lt;a href=&quot;https://www.laoqiange.club/&quot;&gt;老千哥&lt;/a</summary>
       
     
     
+    
+    <category term="杂记" scheme="https://developing-man.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>
