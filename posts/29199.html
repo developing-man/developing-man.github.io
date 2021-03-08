@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="index,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档 - 丁满博客 - Hexo博客</title>
+  <title>微服务商城项目（一） - 丁满博客 - Hexo博客</title>
   
 
   
@@ -343,7 +341,7 @@
 
   
   
-      <div class='cover-wrapper  featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/home_top_bg.jpg"></div>
@@ -424,8 +422,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">微服务商城项目（一）</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -769,87 +767,290 @@
 
   
 
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%83%85%E6%8F%90%E8%A6%81"><span class="toc-text">前情提要</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%83%8C%E6%99%AF"><span class="toc-text">项目背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF-amp-%E7%89%B9%E8%89%B2"><span class="toc-text">项目技术&amp;特色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84%E5%9B%BE"><span class="toc-text">项目架构图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE"><span class="toc-text">项目微服务架构图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%88%92%E5%88%86%E5%9B%BE"><span class="toc-text">微服务划分图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%B8%83%E5%BC%8F%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5"><span class="toc-text">分布式基础概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AE%E6%9C%8D%E5%8A%A1"><span class="toc-text">微服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4-amp-%E5%88%86%E5%B8%83%E5%BC%8F-amp-%E8%8A%82%E7%82%B9"><span class="toc-text">集群&amp;分布式&amp;节点</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+  
+
 
 </aside>
 
 <div class='l_main'>
-	
-	  <article id="arc" class="post article white-box reveal shadow floatable">
-		<h2><i class="fas fa-book-open"></i>&nbsp;时间轴</h2>
-			
-			
-				
-				
-					
-						
-						<h3>2021</h3>
-					
-						<div class='timenode'>
-								<a class="meta" href="/posts/29199.html">
-									<time>03-07</time>
-									
-										微服务商城项目（一）
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/posts/7720.html">
-									<time>02-21</time>
-									
-										如何快速搭建该博客
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/posts/59448.html">
-									<time>02-16</time>
-									
-										第一篇博客
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-				
-				
-					
-						<div class='timenode'>
-								<a class="meta" href="/posts/16107.html">
-									<time>02-14</time>
-									
-										Hello World
-									
-									
-									
-									
-								</a>
-						</div>
-				
-			
-	  </article>
-	
+  <article
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+    
+      
+        <div class='headimg lazyload placeholder' data-bg='https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/photo03.png'></div>
+      
+    
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        微服务商城项目（一）
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/adventure01.jpg">
+    <p>Timon</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fal fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Java/">Java</a><span class="sep"></span><a class="category-link" href="/categories/Java/%E5%BE%AE%E6%9C%8D%E5%8A%A1/">微服务</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年3月7日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="微服务商城项目（一）" data-path="/posts/29199.html">
+        <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+
+  
+  <h2 id="前情提要"><a href="#前情提要" class="headerlink" title="前情提要"></a><strong>前情提要</strong></h2><p>&emsp;&emsp;最近在公司参与微服务配置中心参数管理项目，想着关于微服务理论知识了解不少，但是还并没有机会完全实践去打通整个流程，因此就参照尚硅谷的<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1rK4y1C7fv">谷粒商城项目</a>从头到尾进行一次微服务项目的实际搭建过程。</p>
+<h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a><strong>项目背景</strong></h2><p>谷粒商城项目是B2C（Business to Consumer）模式，即常见的供应商直接将商品卖给用户，也就是通常说的商业零售，如京东商城。</p>
+<h2 id="项目技术-amp-特色"><a href="#项目技术-amp-特色" class="headerlink" title="项目技术&amp;特色"></a><strong>项目技术&amp;特色</strong></h2><ol>
+<li> 前后分离开发，并开发基于 vue 的后台管理系统 </li>
+<li> SpringCloud 全新的解决方案 </li>
+<li> 应用监控、限流、网关、熔断降级等分布式方案全方位涉及 </li>
+<li> 分布式事务、分布式锁等分布式系统的难点 </li>
+<li> 分析高并发场景的编码方式，线程池，异步编排等使用 </li>
+<li> 压力测试与性能优化 </li>
+<li>各种集群技术的区别以及使用 </li>
+<li> CI/CD 使用</li>
+</ol>
+<h2 id="项目架构图"><a href="#项目架构图" class="headerlink" title="项目架构图"></a><strong>项目架构图</strong></h2><ul>
+<li><h3 id="项目微服务架构图"><a href="#项目微服务架构图" class="headerlink" title="项目微服务架构图"></a>项目微服务架构图</h3><p><img src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/image-20210307182343830.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/image-20210307182343830.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="谷粒商城-微服务架构图"></p>
+</li>
+<li><h3 id="微服务划分图"><a href="#微服务划分图" class="headerlink" title="微服务划分图"></a>微服务划分图</h3></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%88%92%E5%88%86%E5%9B%BE.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E-%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%88%92%E5%88%86%E5%9B%BE.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="谷粒商城-微服务划分图"></p>
+<h2 id="分布式基础概念"><a href="#分布式基础概念" class="headerlink" title="分布式基础概念"></a><strong>分布式基础概念</strong></h2><ul>
+<li><h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3></li>
+</ul>
+<p>&emsp;&emsp;微服务架构风格，就像是把一个单独的应用程序开发为一套小服务，每个小服务运行在自 己的进程中，并使用轻量级机制通信，通常是 HTTP API。这些服务围绕业务能力来构建， 并通过完全自动化部署机制来独立部署。这些服务使用不同的编程语言书写，以及不同数据 存储技术，并保持最低限度的集中式管理。</p>
+<blockquote>
+<p>简而言之：拒绝大型单体应用，基于业务边界进行服务微化拆分，各个服务独立部署运行。</p>
+</blockquote>
+<ul>
+<li><h3 id="集群-amp-分布式-amp-节点"><a href="#集群-amp-分布式-amp-节点" class="headerlink" title="集群&amp;分布式&amp;节点"></a>集群&amp;分布式&amp;节点</h3></li>
+</ul>
+<p>集群是个物理形态，分布式是个工作方式。 </p>
+<p>只要是一堆机器，就可以叫集群，他们是不是一起协作着干活，这个谁也不知道； </p>
+<blockquote>
+<p>《分布式系统原理与范型》定义： “分布式系统是若干独立计算机的集合，这些计算机对于用户来说就像单个相关系统” ，分布式系统（distributed system）是建立在网络之上的软件系统。 </p>
+</blockquote>
+<p>分布式是指<code>将不同的业务分布在不同的地方</code>。</p>
+<p>集群指的是<code>将几台服务器集中在一起，实现同一业务</code>。 </p>
+<p>例如：京东是一个分布式系统，众多业务运行在不同的机器，<code>所有业务</code>构成一个大型的<code>业务集群</code>。每一个小的业务，比如用户系统，访问压力大的时候一台服务器是不够的。我们就应该将用户系统部署到<code>多个服务器</code>，也就是每一个业务系统也可以做<code>集群化</code>； 分布式中的每一个节点，都可以做集群。 而<code>集群并不一定就是分布式的</code>。 </p>
+<p>节点：集群中的一个服务器。</p>
+
+  
+  
+  
+  <div class='footer'>
+    
+    
+    
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://developing-man.github.io/posts/29199.html>https://developing-man.github.io/posts/29199.html</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-08T22:30:48+08:00">
+  <a class='notlink'>
+    <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月8日</p>
+  </a>
+</div>
+
+        
+      
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://developing-man.github.io/posts/29199.html&title=微服务商城项目（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://developing-man.github.io/posts/29199.html&title=微服务商城项目（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://developing-man.github.io/posts/29199.html&title=微服务商城项目（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
 </div>
 
 
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+  <div class="prev-next">
+    
+    
+    <a class='next' href='/posts/7720.html'>
+      <p class='title'>如何快速搭建该博客<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>简介2021年02月21日晚更新。
+基本环境
+Window10
+
+Node.js （点击进入官网下载）
+在 Windows 环境下安装 Node.js 非常简单，仅须到官网下载安装文件并执行即可...</p>
+    </a>
+    
+  </div>
+  
+</article>
+
+
+
+
+  <article class="post white-box reveal shadow floatable" id="comments">
+    <p ct><i class='fal fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+</div>
       </div>
       
   
