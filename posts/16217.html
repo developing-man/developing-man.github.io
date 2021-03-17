@@ -16,7 +16,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>所有标签 - 丁满博客 - Hexo博客</title>
+  <title>工作中的总结（一） - 丁满博客 - Hexo博客</title>
+  
+    <meta name="keywords" content="DOS">
   
 
   
@@ -341,7 +343,7 @@
 
   
   
-      <div class='cover-wrapper tag featured' style="display: none;">
+      <div class='cover-wrapper post featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/home_top_bg.jpg"></div>
@@ -422,8 +424,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">工作中的总结（一）</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -451,7 +453,6 @@
 
         
         
-
 
 <aside class='l_side'>
   <div style="margin-bottom: 16px;border-radius: 8px;" class='shadow floatable widget_author desktop'>
@@ -774,6 +775,20 @@
 
 
 
+  <section class="widget toc-wrapper shadow floatable desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fal fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90T-1%E6%97%A5%E6%9C%9F"><span class="toc-text">生成T-1日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%97%E7%95%99%E9%97%AE%E9%A2%98"><span class="toc-text">遗留问题</span></a></li></ol>
+    </div>
+  </section>
+
 
   
 
@@ -781,27 +796,225 @@
 </aside>
 
 <div class='l_main'>
+  <article
+  class="article post white-box reveal md shadow floatable article-type-post"
+  id="post" itemscope itemprop="blogPost">
+  
+
+
   
     
-      <div class='post-wrapper'>
-        <article id="tag" class="post article white-box reveal shadow floatable">
-          <h2>所有标签</h2>
-          <div class="all-tags">
-            <span>按文章数量排列：</span>
-            
-            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%B0%B7%E7%B2%92%E5%95%86%E5%9F%8E/" rel="tag">谷粒商城</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Blog/" rel="tag">BLOG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DOS/" rel="tag">DOS</a><span class="tag-list-count">1</span></li></ul>
-            
-          </div>
-          <script>colortag();</script>
-          <br>
+      
+        <div class='headimg lazyload placeholder' data-bg='https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/DOS.jpg'></div>
+      
+    
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        工作中的总结（一）
+      </h1>
+      <div class='new-meta-box'>
+        
           
-        </article>
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/adventure01.jpg">
+    <p>Timon</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年3月17日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="工作中的总结（一）" data-path="/posts/16217.html">
+        <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
       </div>
     
+  </div>
+
+
   
+
+  
+  <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>最近公司需要批处理生成带T-1日期的sql脚本文件，百度了几个靠谱的方案，修改了各种bug后，记录一下。</p>
+<h2 id="生成T-1日期"><a href="#生成T-1日期" class="headerlink" title="生成T-1日期"></a><strong>生成T-1日期</strong></h2><p>创建时间为T-1的文件：</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off&amp;<span class="built_in">setlocal</span> enabledelayedexpansion</span><br><span class="line"><span class="built_in">set</span> yyyy=<span class="variable">%date:~0,4%</span></span><br><span class="line"><span class="built_in">set</span> mm=<span class="variable">%date:~5,2%</span></span><br><span class="line">:: 将日期两位当做十进制来处理，避免<span class="number">08</span>和<span class="number">09</span>被当做八进制处理报错</span><br><span class="line"><span class="built_in">set</span> dd1=<span class="variable">%date:~8,1%</span></span><br><span class="line"><span class="built_in">set</span> dd2=<span class="variable">%date:~9,1%</span></span><br><span class="line"><span class="built_in">set</span> dd=<span class="variable">!dd1!</span>*<span class="number">10</span>+<span class="variable">!dd2!</span></span><br><span class="line"><span class="built_in">echo</span> 今天是：<span class="variable">%date:~0,4%</span><span class="variable">%date:~5,2%</span><span class="variable">%date:~8,2%</span></span><br><span class="line"><span class="built_in">set</span> /a od=<span class="variable">!dd!</span>-<span class="number">1</span></span><br><span class="line">:: 处理每个月<span class="number">1</span>号特殊情况</span><br><span class="line"><span class="keyword">if</span> <span class="variable">!od!</span>==<span class="number">0</span> <span class="keyword">call</span> :dd0</span><br><span class="line">:: 处理每年一月的特殊情况</span><br><span class="line"><span class="keyword">if</span> <span class="variable">!mm!</span>==<span class="number">0</span> <span class="keyword">call</span> :mm0</span><br><span class="line">:: 对于<span class="number">1</span>-<span class="number">9</span>号进行补<span class="number">0</span>处理</span><br><span class="line"><span class="keyword">if</span> <span class="variable">!od!</span> <span class="keyword">lss</span> <span class="number">10</span> <span class="built_in">set</span> od=<span class="number">0</span><span class="variable">!od!</span></span><br><span class="line"><span class="built_in">echo</span> 昨天是: <span class="variable">!yyyy!</span><span class="variable">!mm!</span><span class="variable">!od!</span></span><br><span class="line"><span class="built_in">pause</span></span><br><span class="line"><span class="keyword">exit</span></span><br><span class="line">:dd0</span><br><span class="line"><span class="built_in">set</span> /a mm=<span class="variable">!mm!</span>-<span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> <span class="variable">%%a</span> <span class="keyword">in</span> (<span class="number">1</span> <span class="number">3</span> <span class="number">5</span> <span class="number">7</span> <span class="number">8</span> <span class="number">10</span> <span class="number">12</span>)<span class="keyword">do</span> <span class="built_in">set</span> <span class="variable">%%a</span>dd=<span class="number">31</span></span><br><span class="line"><span class="built_in">set</span> /a pddd=<span class="variable">!yyyy!</span>*<span class="number">10</span>/<span class="number">4</span></span><br><span class="line"><span class="built_in">set</span> pd2d=<span class="variable">!pddd:~-1,1!</span></span><br><span class="line"><span class="built_in">set</span> <span class="number">2</span>dd=<span class="number">28</span></span><br><span class="line"><span class="keyword">if</span> <span class="variable">!pd2d!</span>==<span class="number">0</span> <span class="built_in">set</span> <span class="number">2</span>dd=<span class="number">29</span></span><br><span class="line"><span class="keyword">for</span> <span class="variable">%%b</span> <span class="keyword">in</span> (<span class="number">4</span> <span class="number">6</span> <span class="number">9</span> <span class="number">11</span>)<span class="keyword">do</span> <span class="built_in">set</span> <span class="variable">%%b</span>dd=<span class="number">30</span></span><br><span class="line"><span class="built_in">set</span> od=<span class="variable">!%mm%dd!</span></span><br><span class="line">:: 对于<span class="number">1</span>-<span class="number">9</span>月进行补<span class="number">0</span>处理</span><br><span class="line"><span class="keyword">if</span> <span class="variable">!mm!</span> <span class="keyword">lss</span> <span class="number">10</span> <span class="keyword">if</span> <span class="variable">!mm!</span> <span class="keyword">gtr</span> <span class="number">0</span> <span class="built_in">set</span> mm=<span class="number">0</span><span class="variable">!mm!</span></span><br><span class="line"><span class="keyword">goto</span> :eof</span><br><span class="line">:mm0</span><br><span class="line"><span class="built_in">set</span> /a yyyy=<span class="variable">!yyyy!</span>-<span class="number">1</span></span><br><span class="line"><span class="built_in">set</span> mm=<span class="number">12</span></span><br><span class="line"><span class="built_in">set</span> od=<span class="number">31</span></span><br><span class="line"><span class="keyword">goto</span> :eof</span><br></pre></td></tr></table></figure>
+<h2 id="遗留问题"><a href="#遗留问题" class="headerlink" title="遗留问题"></a><strong>遗留问题</strong></h2><p>本次处理遗漏了百年整除400才算闰年的情况，即该代码会在2100年3月1日产生bug，当天会生成一个21000229的文件，其实这个日期是不存在的，不过到时，我们可能早已不存在了，万一bug真留到那个时候 ，还是修改一下的好，哈哈！毕竟2200年3月1日以及2300年3月1日也会产生该bug！~~~</p>
+
+  
+  
+  
+  <div class='footer'>
+    
+    
+    
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="\posts\16107.html" title="Hello World" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" /><span class="title">Hello World</span></a></div></section></div>
+    
+    
+    <div class='copyright'>
+      <blockquote>
+        
+        
+        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+        
+        
+        
+        <p>本文永久链接是：<a href=https://devloperhu.gitee.io/posts/16217.html>https://devloperhu.gitee.io/posts/16217.html</a></p>
+        
+        
+      </blockquote>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-17T23:28:54+08:00">
+  <a class='notlink'>
+    <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年3月17日</p>
+  </a>
+</div>
+
+        
+      
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://devloperhu.gitee.io/posts/16217.html&title=工作中的总结（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://devloperhu.gitee.io/posts/16217.html&title=工作中的总结（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://devloperhu.gitee.io/posts/16217.html&title=工作中的总结（一） - 丁满博客 - Hexo博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
 </div>
 
 
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+  <div class="prev-next">
+    
+    
+    <a class='next' href='/posts/57973.html'>
+      <p class='title'>微服务商城项目（二）<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+      <p class='content'>环境搭建安装 linux 虚拟机项目背景谷粒商城项目是B2C（Business to Consumer）模式，即常见的供应商直接将商品卖给用户，也就是通常说的商业零售，如京东商城。
+项目技术&a...</p>
+    </a>
+    
+  </div>
+  
+</article>
+
+
+
+
+  <article class="post white-box reveal shadow floatable" id="comments">
+    <p ct><i class='fal fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+</div>
       </div>
       
   
