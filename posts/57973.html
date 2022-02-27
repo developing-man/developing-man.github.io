@@ -396,6 +396,13 @@
               <i class='fal fa-comments fa-fw'></i><p>留言板</p>
             </a>
           
+            <a href="/about/"
+              
+              
+              id="about">
+              <i class='fal fa-address-card fa-fw'></i><p>关于</p>
+            </a>
+          
             <a target="_blank" rel="noopener" href="https://travellings.now.sh/"
               
               
@@ -517,19 +524,19 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
 
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -614,6 +621,11 @@
             id="categoriesE69D82E8AEB0"
             ><div class='name'>杂记</div><div class='badge'>(2)</div></a></li>
         
+          <li><a class="flat-box"
+            title="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
+            id="categoriesE8AEBEE8AEA1E6A8A1E5BC8F"
+            ><div class='name'>设计模式</div><div class='badge'>(20)</div></a></li>
+        
       </ul>
     </div>
   </section>
@@ -663,7 +675,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>6 篇</div>
+          <div>31 篇</div>
         </div>
       
 
@@ -685,7 +697,7 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>5k 字</div>
+          <div>22.2k 字</div>
         </div>
       
 
@@ -707,8 +719,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Wed Mar 17 2021 23:29:26 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2021-03-17 日</div>
+            <div id="last-update" style="display: none;">Sun Feb 27 2022 22:18:47 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2022-02-27 日</div>
           
         </div>
         
@@ -758,7 +770,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2021-03-17 日';
+            document.getElementById('last-update-show').innerHTML = '2022-02-27 日';
           }
         </script>
         
@@ -785,7 +797,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-linux-%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">安装 linux 虚拟机</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%83%8C%E6%99%AF"><span class="toc-text">项目背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF-amp-%E7%89%B9%E8%89%B2"><span class="toc-text">项目技术&amp;特色</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-docker"><span class="toc-text">安装 docker</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85MySQL"><span class="toc-text">docker安装MySQL</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-linux-%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">安装 linux 虚拟机</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E8%83%8C%E6%99%AF"><span class="toc-text">项目背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%8A%80%E6%9C%AF"><span class="toc-text">项目技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-docker"><span class="toc-text">安装 docker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85MySQL"><span class="toc-text">docker安装MySQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#docker-%E5%AE%89%E8%A3%85-redis"><span class="toc-text">docker 安装 redis</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -876,7 +888,7 @@
 
   
   <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a><strong>环境搭建</strong></h2><h3 id="安装-linux-虚拟机"><a href="#安装-linux-虚拟机" class="headerlink" title="安装 linux 虚拟机"></a><strong>安装 linux 虚拟机</strong></h3><h2 id="项目背景"><a href="#项目背景" class="headerlink" title="项目背景"></a><strong>项目背景</strong></h2><p>谷粒商城项目是B2C（Business to Consumer）模式，即常见的供应商直接将商品卖给用户，也就是通常说的商业零售，如京东商城。</p>
-<h2 id="项目技术-amp-特色"><a href="#项目技术-amp-特色" class="headerlink" title="项目技术&amp;特色"></a><strong>项目技术&amp;特色</strong></h2><ul>
+<h2 id="项目技术"><a href="#项目技术" class="headerlink" title="项目技术"></a><strong>项目技术</strong></h2><ul>
 <li><p>下载&amp;安装 <a target="_blank" rel="noopener" href="https://www.virtualbox.org/">VirtualBox</a>，要进入BIOS开启 CPU 虚拟化</p>
 </li>
 <li><p>下载&amp;安装 Vagrant</p>
@@ -903,7 +915,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/image-20210309215614905.png" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/image-20210309215614905.png" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="image-20210309215614905"></p>
 </li>
 </ul>
-<h3 id="安装-docker"><a href="#安装-docker" class="headerlink" title="安装 docker"></a><strong>安装 docker</strong></h3><p>&emsp;&emsp;虚拟化容器技术。Docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。</p>
+<h2 id="安装-docker"><a href="#安装-docker" class="headerlink" title="安装 docker"></a><strong>安装 docker</strong></h2><p>&emsp;&emsp;虚拟化容器技术。Docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/architecture.svg" class="lazyload placeholder" data-srcset="https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/architecture.svg" srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/placeholder/c617bfd2497fcea598e621413e315c368f8d8e.svg" alt="Docker Architecture Diagram"></p>
 <p>1、卸载系统之前的 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">docker sudo yum remove docker \ </span><br><span class="line">					docker-client \ </span><br><span class="line">					docker-client-latest \ </span><br><span class="line">					docker-common \ </span><br><span class="line">					docker-latest \ </span><br><span class="line">					docker-latest-logrotate \ </span><br><span class="line">					docker-logrotate \ </span><br><span class="line">					docker-engine </span><br></pre></td></tr></table></figure>
@@ -921,7 +933,37 @@
 <p>  <a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/commandline/docker/">https://docs.docker.com/engine/reference/commandline/docker/</a> </p>
 <p>6、配置 docker 镜像加速 阿里云，容器镜像服务 针对 Docker 客户端版本大于 1.10.0 的用户 您可以通过修改 daemon 配置文件/etc/docker/daemon.json 来使用加速器 </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir -p &#x2F;etc&#x2F;docker </span><br><span class="line">sudo tee &#x2F;etc&#x2F;docker&#x2F;daemon.json &lt;&lt;-&#39;EOF&#39;</span><br><span class="line">&#123; </span><br><span class="line">&quot;registry-mirrors&quot;: [&quot;https:&#x2F;&#x2F;82m9ar63.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125; </span><br><span class="line">EOF </span><br><span class="line">sudo systemctl daemon-reload </span><br><span class="line">sudo systemctl restart docker</span><br></pre></td></tr></table></figure>
-<h3 id="docker安装MySQL"><a href="#docker安装MySQL" class="headerlink" title="docker安装MySQL"></a><strong>docker安装MySQL</strong></h3><p>1、下载镜像文件</p>
+<ul>
+<li><h3 id="docker安装MySQL"><a href="#docker安装MySQL" class="headerlink" title="docker安装MySQL"></a><strong>docker安装MySQL</strong></h3></li>
+</ul>
+<p>1、下载镜像文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull mysql:5.7</span><br></pre></td></tr></table></figure>
+<p>2、创建实例并启动</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 3306:3306 --name mysql \ </span><br><span class="line">-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql \ </span><br><span class="line">-v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql \ </span><br><span class="line">-v &#x2F;mydata&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql \ </span><br><span class="line">-e MYSQL_ROOT_PASSWORD&#x3D;root \ </span><br><span class="line">-d mysql:5.7 </span><br><span class="line">参数说明 </span><br><span class="line">	-p 3306:3306：将容器的 3306 端口映射到主机的 3306 端口 </span><br><span class="line">	-v &#x2F;mydata&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql：将配置文件夹挂载到主机 </span><br><span class="line">	-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql：将日志文件夹挂载到主机 </span><br><span class="line">	-v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql&#x2F;：将配置文件夹挂载到主机 </span><br><span class="line">	-e MYSQL_ROOT_PASSWORD&#x3D;root：初始化 root 用户的密码</span><br></pre></td></tr></table></figure>
+<p><strong>MySQL 配置</strong> </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">vi &#x2F;mydata&#x2F;mysql&#x2F;conf&#x2F;my.cnf </span><br><span class="line">[client] </span><br><span class="line">default-character-set&#x3D;utf8 </span><br><span class="line"></span><br><span class="line">[mysql] </span><br><span class="line">default-character-set&#x3D;utf8 </span><br><span class="line"></span><br><span class="line">[mysqld] </span><br><span class="line">init_connect&#x3D;&#39;SET collation_connection &#x3D; utf8_unicode_ci&#39; </span><br><span class="line">init_connect&#x3D;&#39;SET NAMES utf8&#39; </span><br><span class="line">character-set-server&#x3D;utf8 </span><br><span class="line">collation-server&#x3D;utf8_unicode_ci </span><br><span class="line">skip-character-set-client-handshake </span><br><span class="line">skip-name-resolve</span><br></pre></td></tr></table></figure>
+<p><strong>注意：解决 MySQL 连接慢的问题</strong><br>在配置文件中加入如下，并重启 mysql </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[mysqld] </span><br><span class="line">skip-name-resolve </span><br></pre></td></tr></table></figure>
+<p>解释： skip-name-resolve：跳过域名解析</p>
+<p>3、通过容器的 mysql 命令行工具连接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it mysql mysql -uroot -proot</span><br></pre></td></tr></table></figure>
+<p>4、设置 root 远程访问</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on *.* to &#39;root&#39;@&#39;%&#39; identified by &#39;root&#39; with grant option; </span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+<p>5、进入容器文件系统</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec  -it mysql&#x2F;bin&#x2F;bash</span><br></pre></td></tr></table></figure>
+<ul>
+<li><h3 id="docker-安装-redis"><a href="#docker-安装-redis" class="headerlink" title="docker 安装 redis"></a><strong>docker 安装 redis</strong></h3></li>
+</ul>
+<p>1、下载镜像文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
+<p>2、创建实例并启动</p>
+<p>需要手动新建conf文件，不然挂载时会建一个文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;mydata&#x2F;redis&#x2F;conf </span><br><span class="line">touch &#x2F;mydata&#x2F;redis&#x2F;conf&#x2F;redis.conf </span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 6379:6379 --name redis </span><br><span class="line">-v &#x2F;mydata&#x2F;redis&#x2F;data:&#x2F;data \ </span><br><span class="line">-v &#x2F;mydata&#x2F;redis&#x2F;conf&#x2F;redis.conf:&#x2F;etc&#x2F;redis&#x2F;redis.conf \ </span><br><span class="line">-d redis redis-server &#x2F;etc&#x2F;redis&#x2F;redis.conf</span><br></pre></td></tr></table></figure>
+<p>在redis.conf配置AOF持久化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appendonly yes</span><br></pre></td></tr></table></figure>
+<p>3、使用 redis 镜像执行 redis-cli 命令连接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it redis redis-cli</span><br></pre></td></tr></table></figure>
 
   
   
@@ -964,10 +1006,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-10T22:30:20+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-03-20T10:08:54+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年3月10日</p>
+    <p>更新于：2021年3月20日</p>
   </a>
 </div>
 
@@ -1037,11 +1079,12 @@
   
   <div class="prev-next">
     
-    <a class='prev' href='/posts/16217.html'>
-      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>工作中的总结（一）</p>
-      <p class='content'>简介最近公司需要批处理生成带T-1日期的sql脚本文件，百度了几个靠谱的方案，修改了各种bug后，记录一下。
-生成T-1日期创建时间为T-1的文件：
-1234567891011121314151...</p>
+    <a class='prev' href='/posts/4588.html'>
+      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>搭建Spring本地调试环境</p>
+      <p class='content'>前情提要&emsp;&emsp;最近准备系统回顾下Spring框架，准备在本地进行搭建调试，过程中遇到一些坑，其实按照官方给出的搭建步骤进行就行。
+准备步骤
+下载Spring源码
+安装gradl...</p>
     </a>
     
     
@@ -1702,8 +1745,8 @@
       meta: meta,
       placeholder: pagePlaceholder,
       path: path,
-      appId: "pO7QdOxjFh08j5guEwJDNNee-MdYXbMMI",
-      appKey: "UA5bDsPMLUBybxcddtq9XNPf",
+      appId: "b50rRCUsDxEEKg7GRswTHYwT-9Nh9j0Va",
+      appKey: "uBLHGoqUEzHVC6efJa8Addec",
       pageSize: '10',
       avatar: 'robohash',
       lang: 'zh-cn',
@@ -1745,10 +1788,10 @@ var valine = new Valine({
       el: '#valine_container_ba',
       notify: false,
       verify: false,
-      app_id: 'pO7QdOxjFh08j5guEwJDNNee-MdYXbMMI',
-      app_key: 'UA5bDsPMLUBybxcddtq9XNPf',
+      app_id: 'b50rRCUsDxEEKg7GRswTHYwT-9Nh9j0Va',
+      app_key: 'uBLHGoqUEzHVC6efJa8Addec',
       placeholder: '发表您的意见，让我们一起交流，共同提高吧...',
-      serverURLs: 'https://us.avoscloud.com'
+      serverURLs: 'https://tab.avoscloud.com'
 });
 
 //判断博主，heson改为自己的昵称
@@ -1844,8 +1887,8 @@ valine.Q('*').limit(7).find().then(function (comments) {
   <script defer>
 
   const LCCounter = {
-    app_id: 'pO7QdOxjFh08j5guEwJDNNee-MdYXbMMI',
-    app_key: 'UA5bDsPMLUBybxcddtq9XNPf',
+    app_id: 'b50rRCUsDxEEKg7GRswTHYwT-9Nh9j0Va',
+    app_key: 'uBLHGoqUEzHVC6efJa8Addec',
     custom_api_server: '',
 
     // 查询存储的记录
