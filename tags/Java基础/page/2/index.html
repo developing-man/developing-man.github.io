@@ -525,19 +525,19 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
 
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">35</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
             <div class="site-state-item site-state-categories">
               <a href="/categories/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
             <div class="site-state-item site-state-tags">
               <a href="/tags/">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -605,7 +605,12 @@
           <li><a class="flat-box"
             title="/categories/Blog/" href="/categories/Blog/"
             id="categoriesBlog"
-            ><div class='name'>Blog</div><div class='badge'>(1)</div></a></li>
+            ><div class='name'>Blog</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/JDK%E6%BA%90%E7%A0%81/" href="/categories/JDK%E6%BA%90%E7%A0%81/"
+            id="categoriesJDKE6BA90E7A081"
+            ><div class='name'>JDK源码</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/Linux/" href="/categories/Linux/"
@@ -621,6 +626,11 @@
             title="/categories/%E6%9D%82%E8%AE%B0/" href="/categories/%E6%9D%82%E8%AE%B0/"
             id="categoriesE69D82E8AEB0"
             ><div class='name'>杂记</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/%E7%BD%91%E7%BB%9C/" href="/categories/%E7%BD%91%E7%BB%9C/"
+            id="categoriesE7BD91E7BB9C"
+            ><div class='name'>网络</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
@@ -676,7 +686,7 @@
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>31 篇</div>
+          <div>35 篇</div>
         </div>
       
 
@@ -698,7 +708,7 @@
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>22.8k 字</div>
+          <div>29.3k 字</div>
         </div>
       
 
@@ -720,8 +730,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Sat Mar 12 2022 19:37:15 GMT+0800 (中国标准时间)</div>
-            <div id="last-update-show">2022-03-12 日</div>
+            <div id="last-update" style="display: none;">Sun Apr 24 2022 12:13:45 GMT+0800 (中国标准时间)</div>
+            <div id="last-update-show">2022-04-24 日</div>
           
         </div>
         
@@ -771,7 +781,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2022-03-12 日';
+            document.getElementById('last-update-show').innerHTML = '2022-04-24 日';
           }
         </script>
         
@@ -792,6 +802,64 @@
   <section class="post-list">
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable">
+  
+  
+  
+    <div class='headimg-div'>
+      <a class='headimg-a' href="/posts/64715.html">
+        
+          
+            <div class='headimg lazyload placeholder' data-bg='https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.jpg'></div>
+          
+        
+      </a>
+    </div>
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/posts/64715.html">
+        设计模式之代理模式
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        代理模式在代理模式（Proxy Pattern）中，一个类代表另一个类的功能。这种类型的设计模式属于结构型模式。
+在代理模式中，我们创建具有现有对象的对象，以便向外界提供功能接口。
+注意事项： 1、和适配器模式的区别：适配器模式主要改变所考虑对象的接口，而代理模式不能改变所代理类的接口。 2、和装饰器模式的区别：装饰器模式为了增强功能，而代理模式是为了加以控制。
+代码演示1234567891...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        <time>2021-04-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+        
+      </div>
+      
+        <div>
+            <a class='readmore' href='/posts/64715.html'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -1295,62 +1363,6 @@
       
         <div>
             <a class='readmore' href='/posts/31793.html'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable">
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/posts/35042.html">
-        
-          
-            <div class='headimg lazyload placeholder' data-bg='https://cdn.jsdelivr.net/gh/developing-man/ImgHosting/TIMON-PIC/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.jpg'></div>
-          
-        
-      </a>
-    </div>
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/posts/35042.html">
-        设计模式之迭代器模式
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        前情提要&emsp;&emsp;最近发现新公司项目的代码部分过于不规范，可能是项目排期紧，没时间做重构等优化。虽然当时能快速完成任务，且满足业务需求，但是对于后期维护或者新扩展功能时，因为原始代码过于混乱，会导致自己或后来的开发人员痛不欲生，因此准备温习下之前学习的设计模式，在后期自己写代码时，能更多的去运用设计模式，使自己的代码更加优雅。
-迭代器模式提供一个对象来顺序访问聚合对象中的一系列...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2021-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
-        
-      </div>
-      
-        <div>
-            <a class='readmore' href='/posts/35042.html'>
             阅读全文
           </a>
         </div>
